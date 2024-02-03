@@ -1,0 +1,39 @@
+
+.announcement {
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0, 0, 0.38, 1) 0s;
+    position: relative;
+    background-color: #1c1d1d;
+    color: #fff;
+    max-height: 100px;
+    transform: translateZ(0px);
+    z-index: 29;
+  }
+  
+  .announcement__text {
+    box-sizing: border-box;
+    transition: opacity 0.75s ease 0s;
+    display: block;
+    text-align: center;
+    padding: 6px 20px 5px;
+    font-size: 16px;
+  }
+  
+  /* Assuming these global styles need to be applied if not already present */
+  html, body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    touch-action: manipulation;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Lato, sans-serif;
+    letter-spacing: 0.025em;
+    line-height: 1.6;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    text-rendering: optimizespeed;
+    font-weight: 400;
+  }

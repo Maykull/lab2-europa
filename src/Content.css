@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjusts the space distribution */
+  padding: 200px; /* Optional: Adds some padding around the content */
+}
+
+.content > * {
+  width: calc(25% - 20px); /* Adjust the width of each child (card) */
+  margin-bottom: 20px; /* Adjust the gap between rows */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 1200px) {
+  .content > * {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .content > * {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .content > * {
+    width: 100%;
+  }
+}
